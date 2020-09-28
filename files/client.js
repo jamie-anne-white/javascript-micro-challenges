@@ -48,3 +48,19 @@ function firstAndLast(array) {
   
   console.log(firstAndLast([2,4,6,8,10])); // return 12
   console.log(firstAndLast([3,6,9,12,15])); // return 18
+
+// STRETCH MODE //
+
+/* Loops, Arrays, and Concatenation Checkpoint
+
+Create a function that takes two parameters. The first parameter is an array, the second parameter will be a number.
+
+Your function should return a string that combines all of the values starting at the index of the number passed in through the end of the array. */
+
+function loop(array, num){
+    return array.splice(num);
+}
+
+console.log(loop(["Meow", "Woof", "Tweet!", "I", "love", "all", "the","animals!"], 3)); // return "I love all the animals!"
+console.log(loop(["Sunshine", "Daisy", "Summer!"], 2)); // return "Summer!"
+
