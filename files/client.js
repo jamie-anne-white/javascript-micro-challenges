@@ -51,7 +51,7 @@ function firstAndLast(array) {
 
 // STRETCH MODE //
 
-/* Loops, Arrays, and Concatenation Checkpoint
+/* 130 Loops, Arrays, and Concatenation Checkpoint
 
 Create a function that takes two parameters. The first parameter is an array, the second parameter will be a number.
 
@@ -59,8 +59,44 @@ Your function should return a string that combines all of the values starting at
 
 function loop(array, num){
     return array.splice(num);
+ 
 }
 
 console.log(loop(["Meow", "Woof", "Tweet!", "I", "love", "all", "the","animals!"], 3)); // return "I love all the animals!"
 console.log(loop(["Sunshine", "Daisy", "Summer!"], 2)); // return "Summer!"
+
+//as of now it is still returning an array rather than a string. 
+
+/* 140 Looping through an Array of Objects Checkpoint
+
+Create a function that takes in an array of employee objects. Each employee object will come in with a property called `yearsOfExperience`. Your function should return the total years of experience for all of the employees. */
+
+let sum = 0;
+
+function yearsExp(array) {
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i].yearsOfExperience;
+  }
+  return sum;
+}
+
+console.log(yearsExp([{
+    name: "Jimmy",
+    yearsOfExperience: 10
+  },
+  {
+    name: "Jonny",
+    yearsOfExperience: 4
+  }
+])); //return 14
+
+console.log(yearsExp([{
+    name: "Jimmy",
+    yearsOfExperience: 28
+  },
+  {
+    name: "Jonny",
+    yearsOfExperience: 4
+  }
+])); //return 32, but did not, it returned 46
 
